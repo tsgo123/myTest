@@ -1,0 +1,86 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int max=0,num1=0,i,n,len1,len2,len3,a=0,j,k,num2=0,m,c,d,num3,z=0,x=0,y=0;
+	char arr[301]={},s1[11]={},s2[11]={},ch;
+	while(scanf("%c",&ch)&&ch!=',')
+	{
+		arr[z]=ch;
+		z++;
+	}
+	z=0;
+	while(scanf("%c",&ch)&&ch!=',')
+	{
+		s1[z]=ch;
+		z++;
+	}
+	gets(s2);
+	len1=strlen(arr);
+	len2=strlen(s1);
+	len3=strlen(s2);
+	for(i=0;i<len1;i++)
+	{
+		if(arr[i]==s1[0])
+		{
+			a=0;
+			c=a;
+			j=i;
+			num1=0;
+			while(arr[j]==s1[c]&&a<len2)
+			{	
+				j++;
+				c++;
+				num1++;
+				a++;
+			}
+			if(num1==len2)
+			{
+				for(n=i+len2;n<len1;n++)
+				{
+					
+					if(arr[n]==s2[0])
+					{
+						y=1;
+						m=0;
+						d=m;
+						k=n;
+						num2=0;
+						while(arr[k]==s2[m]&&d<len3)
+						{
+							k++;
+							m++;
+							num2++;
+							d++;
+						}
+						if(num2==len3)
+						{
+							num3=n-(i+len2);
+							if(num3>=max)
+							{
+								x=1;
+								max=num3;
+							}
+						}
+					}
+				}
+				if(max==0&&x==0||num3<0)
+				{
+					printf("-1");
+					system("pause");
+					return 0;
+				}
+			}
+		}
+	}
+	if(y==0)
+	{
+		printf("-1");
+		system("pause");
+		return 0;
+	}
+	printf("%d",max);
+	system("pause");
+	return 0;
+}

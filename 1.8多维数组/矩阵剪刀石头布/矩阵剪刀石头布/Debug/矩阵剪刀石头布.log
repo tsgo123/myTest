@@ -1,0 +1,17 @@
+﻿生成启动时间为 2023/11/29 20:19:56。
+     1>项目“D:\1编程\1初学\1.8多维数组\矩阵剪刀石头布\矩阵剪刀石头布\矩阵剪刀石头布.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\矩阵剪刀石头布.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         矩阵剪刀石头布.vcxproj -> D:\1编程\1初学\1.8多维数组\矩阵剪刀石头布\矩阵剪刀石头布\Debug\矩阵剪刀石头布.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\矩阵剪刀石头布.unsuccessfulbuild”。
+         正在对“Debug\矩阵剪刀石头布.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\1编程\1初学\1.8多维数组\矩阵剪刀石头布\矩阵剪刀石头布\矩阵剪刀石头布.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.04

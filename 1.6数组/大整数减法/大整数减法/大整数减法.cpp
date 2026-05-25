@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	char x[400],y[400];
+	int i,a,b,arr[400]={0},brr[400]={0},m[400]={0},n,e=0;
+	scanf("%s%s",x,y);
+	a=strlen(x);
+	b=strlen(y);
+	for(i=0;i<a;i++)
+	{
+		arr[i]=x[i]-'0';
+	}
+	for(i=0;i<b;i++)
+	{
+		brr[i]=y[i]-'0';
+	}
+	for(i=0;i<a-1;i++,a--)
+	{
+		n=arr[a-1];
+		arr[a-1]=arr[i];
+		arr[i]=n;
+	}
+    for(i=0;i<b-1;i++,b--)
+	{
+		n=brr[b-1];
+		brr[b-1]=brr[i];
+		brr[i]=n;
+	}
+	for(i=0;i<200;i++)
+	{
+		m[i]=arr[i]-brr[i];
+	}
+	for(i=0;i<200;i++)
+	{
+		if(m[i]<0)
+		{
+			m[i]+=10;
+			m[i+1]-=1;
+		}
+	}
+	for(i=201;i>=0;i--)
+	{
+		if(m[i]!=0||m[i]==0&&e!=0)
+		{
+			e=1;
+			printf("%d",m[i]);
+		}
+	}
+	if(e==0)
+	{
+		printf("0");
+	}
+	system("pause");
+	return 0;
+}

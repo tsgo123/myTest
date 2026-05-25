@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,arr[31][510]={0},a,m=0,i,z=0,max=0,x=0;
+	char ch;
+	scanf("%d",&n);
+	getchar();
+	for(i=0;i<n;i++)
+	{
+		z=0;
+		m=0;
+		do
+		{
+			if(z==0)
+			{
+				scanf("%d",&a);
+				arr[i][m]=a;
+				m++;
+				z=1;
+				if(a>max)
+				{
+					max=a;
+				}
+			}
+			else
+			{
+				scanf(",");
+				scanf("%d",&a);
+	     		arr[i][m]=a;
+				m++;
+				if(a>max)
+				{
+					max=a;
+				}
+			}
+		}
+		while(scanf("%c",&ch)&&ch!='\n');
+	}
+	printf("%d\n",max);
+	for(i=0;i<n;i++)
+	{
+		z=0;
+		for(m=0;m<510;m++)
+		{
+			if(arr[i][m]==max&&z==0&&x==0)
+			{
+				printf("%d",i+1);
+				z=1;
+				x=1;
+			}
+			else if(arr[i][m]==max&&z==0)
+			{
+			   printf(",%d",i+1);
+			   z=1;
+			}
+		}
+	}
+	system("pause");
+	return 0;
+}

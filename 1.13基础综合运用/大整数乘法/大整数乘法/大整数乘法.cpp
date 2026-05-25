@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+char arr[21000]={0},brr[21000]={0};
+int crr[21000]={0},drr[21000]={0},sum[50000]={0},err[21000]={0};
+int main()
+{
+	int i,j,len1,len2,flag=0,z=0,num=0;
+	gets(arr);
+	gets(brr);
+	len1=strlen(arr);
+	len2=strlen(brr);
+	for(i=len1-1;i>=0;i--)
+	{
+		crr[len1-1-i]=arr[i]-'0';
+	}
+  	for(i=len2-1;i>=0;i--)
+	{
+ 		drr[len2-1-i]=brr[i]-'0';
+	}
+	for(i=0;i<len1;i++)
+	{
+		for(j=0;j<len2;j++)
+		{
+			err[j]=drr[j]*crr[i];
+		}
+		for(z=len2-1+i;z>=i;z--)
+			{
+				err[z]=err[z-i];
+			}
+		for(z=0;z<i;z++)
+		{
+			err[z]=0;
+		}
+		if(i!=0)
+			{
+				len2++;
+			}
+		for(z=0;z<len2;z++)
+		{
+			sum[z]+=err[z];
+		}
+		for(z=0;z<len2;z++)
+		{
+			err[z]=0;
+		}
+	}
+	for(z=0;z<len2;z++)
+	{
+		sum[z+1]+=sum[z]/10;
+		sum[z]%=10;
+	}
+	while(sum[z]>0)
+	{
+	sum[z+1]+=sum[z]/10;
+		sum[z]%=10;
+		z++;
+		len2++;
+	}
+	for(i=len2-1;i>=0;i--)
+	{
+		if(flag==1||sum[i]!=0)
+		{
+			printf("%d",sum[i]);
+			flag=1;
+		}
+	}
+	for(i=len2-1;i>=0;i--)
+	{
+		if(sum[i]==0)
+		{
+			num++;
+		}
+	}
+	if(num==len2)
+	{
+		printf("0");
+	}
+	system("pause");
+	return 0;
+}

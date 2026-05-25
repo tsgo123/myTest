@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ISBN号码", "ISBN号码.vcxproj", "{50D65897-0298-4AF3-878B-571B9A158541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D65897-0298-4AF3-878B-571B9A158541}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50D65897-0298-4AF3-878B-571B9A158541}.Debug|Win32.Build.0 = Debug|Win32
+		{50D65897-0298-4AF3-878B-571B9A158541}.Release|Win32.ActiveCfg = Release|Win32
+		{50D65897-0298-4AF3-878B-571B9A158541}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

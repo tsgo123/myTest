@@ -1,0 +1,30 @@
+﻿生成启动时间为 2023/11/25 23:41:06。
+     1>项目“D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\查找最接近的元素.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "查找最接近的元素.cpp"
+         查找最接近的元素.cpp
+     1>d:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.cpp(8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.cpp(12): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.cpp(15): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.cpp(19): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.cpp(7): warning C4101: “c”: 未引用的局部变量
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\查找最接近的元素.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.lib" /MACHINE:X86 "Debug\查找最接近的元素.obj"
+         LINK : 没有找到 D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.exe 或上一个增量链接没有生成它；正在执行完全链接
+         查找最接近的元素.vcxproj -> D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\Debug\查找最接近的元素.exe;#1" /manifest "Debug\查找最接近的元素.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Debug\查找最接近的元素.unsuccessfulbuild”。
+         正在对“Debug\查找最接近的元素.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\1编程\1初学\1.11二分查找\查找最接近的元素\查找最接近的元素\查找最接近的元素.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.54

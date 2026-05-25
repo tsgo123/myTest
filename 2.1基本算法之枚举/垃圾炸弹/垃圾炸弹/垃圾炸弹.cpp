@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<stdlib.h>
+int arr[1025][1025]={0},xrr[21]={0},yrr[21]={0},brr[1025][1025]={0};
+int main()
+{
+	int n,m,i,j,d,sum=0,max=0,x,y,a=0;
+	scanf("%d",&d);
+	scanf("%d",&n);
+	for(m=0;m<n;m++)
+	{
+		scanf("%d%d%d",&i,&j,&sum);
+		arr[i][j]=sum;
+		xrr[m]=i;
+		yrr[m]=j;
+	}
+	for(m=0;m<n;m++)
+	{
+		for(i=xrr[m]-d;i<=xrr[m]+d;i++)
+		{
+			for(j=yrr[m]-d;j<=yrr[m]+d;j++)
+			{
+				sum=0;
+				if(i>=0&&i<1025&&j>=0&&j<1025)
+				{
+					for(x=i-d;x<=i+d;x++)
+					{
+						for(y=j-d;y<=j+d;y++)
+						{
+							if(x>=0&&x<1025&&y>=0&&y<1025)
+								sum+=arr[x][y];
+						}
+					}
+					if(sum>max)
+						max=sum;
+				}
+			}
+		}
+	}
+	for(m=0;m<n;m++)
+	{
+		for(i=xrr[m]-d;i<=xrr[m]+d;i++)
+		{
+			for(j=yrr[m]-d;j<=yrr[m]+d;j++)
+			{
+				sum=0;
+				if(i>=0&&i<1025&&j>=0&&j<1025)
+				{
+					for(x=i-d;x<=i+d;x++)
+					{
+						for(y=j-d;y<=j+d;y++)
+						{
+							if(x>=0&&x<1025&&y>=0&&y<1025)
+								sum+=arr[x][y];
+						}
+					}
+					if(sum==max&&brr[i][j]==0)
+					{
+						a++;
+						brr[i][j]++;
+					}
+				}
+			}
+		}
+	}
+	printf("%d %d",a,max);
+	system("pause");
+	return 0;
+}

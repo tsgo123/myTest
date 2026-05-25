@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,m,i,count=0,t=0,z;
+	int arr[310]={0};
+	while(scanf("%d%d",&n,&m)&&n*m!=0)
+	{
+		count=0;
+		t=0;
+		z=n;
+		for(i=1;i<=n;i++)
+		{
+			arr[i-1]=i;
+		}
+		while(n-1)
+		{
+			while(arr[t]==0)
+				{
+					t++;
+					if(t>=z)
+						t=0;
+				}
+			count++;
+			if(count%m==0)
+			{
+				while(arr[t]==0)
+				{
+					t++;
+					if(t==z)
+						t=0;
+				}
+	            arr[t]=0;
+				n--;
+			}
+			t++;
+		}
+		for(i=0;i<z;i++)
+		{
+			if(arr[i]!=0)
+			{
+				printf("%d\n",arr[i]);
+				break;
+			}
+		}
+	}
+	system("pause");
+	return 0;
+}

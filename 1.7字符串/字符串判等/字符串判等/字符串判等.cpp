@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int i,n=0,m=0,len1,len2;
+	char arr[1000],brr[1000],crr[1000]={},drr[1000]={};
+	gets(arr);
+	gets(brr);
+	len1=strlen(arr);
+	len2=strlen(brr);
+	for(i=0;i<len1;i++)
+	{
+		if(arr[i]<='Z'&&arr[i]>='A')
+		{
+			crr[n]=arr[i];
+			n++;
+		}
+		if(arr[i]<='z'&&arr[i]>='a')
+		{
+			arr[i]-=32;
+			crr[n]=arr[i];
+			n++;
+		}
+	}
+	for(i=0;i<len2;i++)
+	{
+		if(brr[i]<='Z'&&brr[i]>='A')
+		{
+			drr[m]=brr[i];
+			m++;
+		}
+		if(brr[i]<='z'&&brr[i]>='a')
+		{
+			brr[i]-=32;
+			drr[m]=brr[i];
+			m++;
+		}
+	}
+	if(strcmp(crr,drr)==0)
+	{
+		printf("YES");
+	}
+	else
+	{
+		printf("NO");
+	}
+	system("pause");
+	return 0;
+}

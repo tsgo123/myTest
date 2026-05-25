@@ -1,0 +1,17 @@
+﻿生成启动时间为 2023/11/25 22:27:33。
+     1>项目“D:\1编程\1初学\1.7字符串\单词的长度\单词的长度\单词的长度.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\单词的长度.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         单词的长度.vcxproj -> D:\1编程\1初学\1.7字符串\单词的长度\单词的长度\Debug\单词的长度.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\单词的长度.unsuccessfulbuild”。
+         正在对“Debug\单词的长度.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\1编程\1初学\1.7字符串\单词的长度\单词的长度\单词的长度.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.05

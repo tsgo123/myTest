@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,m,i,arr[11000]={0},t=0,flag=0,num=0,b;
+	scanf("%d%d",&n,&m);
+	getchar();
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+		b=m;
+	while(flag==0)
+	{
+		for(i=0;i<m;i++)
+		{
+			arr[i]--;
+		}
+		t++;
+		for(i=0;i<m;i++)
+		{
+			if(arr[i]<=0&&b<=n)
+			{
+				arr[i]=arr[b];
+				b++;
+			}
+		}
+		for(i=0;i<m;i++)
+		{
+			if(arr[i]<=0)
+			{
+				num++;
+			}
+		}
+		if(num==m)
+		{
+			flag=1;
+		}
+		num=0;
+	}
+	printf("%d",t);
+	system("pause");
+	return 0;
+}

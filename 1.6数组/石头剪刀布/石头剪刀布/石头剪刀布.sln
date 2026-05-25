@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "石头剪刀布", "石头剪刀布.vcxproj", "{BC5D28A3-9D7B-454A-A20F-D73B16C010A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC5D28A3-9D7B-454A-A20F-D73B16C010A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC5D28A3-9D7B-454A-A20F-D73B16C010A8}.Debug|Win32.Build.0 = Debug|Win32
+		{BC5D28A3-9D7B-454A-A20F-D73B16C010A8}.Release|Win32.ActiveCfg = Release|Win32
+		{BC5D28A3-9D7B-454A-A20F-D73B16C010A8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

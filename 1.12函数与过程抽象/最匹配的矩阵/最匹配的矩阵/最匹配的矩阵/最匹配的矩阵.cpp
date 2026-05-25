@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+	int m,n,r,s,i,j,x,y,min=10000000000,a,max=0,x1=0,y1=0;
+	int arr[110][110]={0},brr[110][110]={0};
+	scanf("%d%d",&m,&n);
+	for(i=0;i<m;i++)
+	{
+		getchar();
+		for(j=0;j<n;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	getchar();
+	scanf("%d%d",&r,&s);
+	for(i=0;i<r;i++)
+	{
+		getchar();
+		for(j=0;j<s;j++)
+		{
+			scanf("%d",&brr[i][j]);
+		}
+	}
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			if(i<=(m-r)&&j<=(n-s))
+			{
+				for(x=i;x<i+r;x++)
+				{
+					for(y=j;y<j+s;y++)
+					{
+						a=abs(arr[x][y]-brr[x-i][y-j]);
+						max+=a;
+					}
+				}
+					if(max<min)
+					{
+						min=max;
+						x1=i;
+						y1=j;
+					}
+			}
+			max=0;
+		}
+	}
+	for(i=x1;i<x1+r;i++)
+	{
+		for(j=y1;j<y1+s;j++)
+		{
+			printf("%d ",arr[i][j]);
+		}
+		printf("\n");
+	}
+	system("pause");
+	return 0;
+}

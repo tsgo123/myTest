@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "因子分解", "因子分解.vcxproj", "{9808129C-0AC6-447B-9357-1CCCE4F92AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9808129C-0AC6-447B-9357-1CCCE4F92AAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9808129C-0AC6-447B-9357-1CCCE4F92AAA}.Debug|Win32.Build.0 = Debug|Win32
+		{9808129C-0AC6-447B-9357-1CCCE4F92AAA}.Release|Win32.ActiveCfg = Release|Win32
+		{9808129C-0AC6-447B-9357-1CCCE4F92AAA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

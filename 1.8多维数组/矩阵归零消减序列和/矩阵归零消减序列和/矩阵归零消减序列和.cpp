@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int n,m,i,z,min,b;
+	int arr[200][200]={0};
+	scanf("%d",&i);
+	b=i;
+	for(n=0;n<i;n++)
+	{
+		getchar();
+		for(m=0;m<i;m++)
+		{
+			scanf("%d",&arr[n][m]);
+		}
+	}
+	for(z=1;z<=b-1;z++)
+	{
+		printf("%d",arr[1][1]);
+		printf("\n");
+		for(n=0;n<i;n++)
+		{
+			min=arr[n][0];
+			for(m=0;m<i;m++)
+			{
+				if(arr[n][m]<min)
+				{
+					min=arr[n][m];
+				}
+			}
+			for(m=0;m<i;m++)
+			{
+				arr[n][m]-=min;
+			}
+		}
+		for(m=0;m<i;m++)
+		{
+			min=arr[0][m];
+			for(n=0;n<i;n++)
+			{
+				if(arr[n][m]<min)
+				{
+					min=arr[n][m];
+			for(n=0;n<i;n++)
+			{
+				}
+			}
+				arr[n][m]-=min;
+			}
+		}
+		if(z==b-1)
+		{
+			printf("%d",arr[1][1]);
+		}
+		for(n=1;n<i;n++)
+		{
+			for(m=0;m<i;m++)
+			{
+				arr[n][m]=arr[n+1][m];
+			}
+		}
+		for(m=1;m<i;m++)
+		{
+			for(n=0;n<i-1;n++)
+			{
+				arr[n][m]=arr[n][m+1];
+			}
+		}
+		i--;
+	}
+	system("pause");
+	return 0;
+}

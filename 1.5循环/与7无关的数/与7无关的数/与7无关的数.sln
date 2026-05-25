@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "与7无关的数", "与7无关的数.vcxproj", "{BF196455-7A38-40F4-9474-7A00B69BB895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF196455-7A38-40F4-9474-7A00B69BB895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF196455-7A38-40F4-9474-7A00B69BB895}.Debug|Win32.Build.0 = Debug|Win32
+		{BF196455-7A38-40F4-9474-7A00B69BB895}.Release|Win32.ActiveCfg = Release|Win32
+		{BF196455-7A38-40F4-9474-7A00B69BB895}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

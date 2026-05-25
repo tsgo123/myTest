@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "白细胞计数", "白细胞计数.vcxproj", "{CFDADF35-6583-49E9-8AC6-BC7A5675E28F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFDADF35-6583-49E9-8AC6-BC7A5675E28F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CFDADF35-6583-49E9-8AC6-BC7A5675E28F}.Debug|Win32.Build.0 = Debug|Win32
+		{CFDADF35-6583-49E9-8AC6-BC7A5675E28F}.Release|Win32.ActiveCfg = Release|Win32
+		{CFDADF35-6583-49E9-8AC6-BC7A5675E28F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

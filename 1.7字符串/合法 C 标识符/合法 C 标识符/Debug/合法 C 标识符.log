@@ -1,0 +1,19 @@
+﻿生成启动时间为 2023/11/2 22:14:23。
+     1>项目“D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\合法 C 标识符.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\合法 C 标识符.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\Debug\合法 C 标识符.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\合法 C 标识符.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\Debug\合法 C 标识符.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\Debug\合法 C 标识符.lib" /MACHINE:X86 "Debug\合法 C 标识符.obj"
+         合法 C 标识符.vcxproj -> D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\Debug\合法 C 标识符.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\Debug\合法 C 标识符.exe;#1" /manifest "Debug\合法 C 标识符.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Debug\合法 C 标识符.unsuccessfulbuild”。
+         正在对“Debug\合法 C 标识符.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\1编程\初学\字符串1234\合法 C 标识符\合法 C 标识符\合法 C 标识符.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.84

@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int i=0,n,len,j,k,num=0,m,z=0,x=0,min,y;
+	char arr[700]={},brr[2000][505]={},crr[700]={};
+	gets(arr);
+	len=strlen(arr);
+	for(i=0;i<len;i++)
+	{
+		for(n=len-1;n>=i+1;n--)
+		{
+			num=0;
+			if(arr[i]==arr[n]&&n!=i)
+			{
+				j=i;
+				k=n;
+				while(arr[j]==arr[k]&&j<k)
+				{
+					j++;
+					k--;
+					num++;
+				}
+				if(num==(n-i+1)/2)
+				{
+					x=0;
+					for(m=i;m<=n;m++)
+					{
+						brr[z][x]=arr[m];
+						x++;
+					}
+					z++;
+				}
+			}
+		}
+	}
+	for(i=0;i<z;i++) 
+	{
+		min=strlen(brr[i]);
+		for(n=i+1;n<z;n++)
+		{
+			if(strlen(brr[n])<min)
+			{
+				min=strlen(brr[n]);
+				strcpy(crr,brr[i]);
+				strcpy(brr[i],brr[n]);
+				for(y=n;y>=i+1;y--)
+				{
+					if(y==i+1)
+					{
+						strcpy(brr[y],crr);
+					}
+					else
+					{
+						strcpy (brr[y],brr[y-1]);
+					}
+				}
+			}
+		}
+	}
+	for(i=0;i<z;i++)
+	{
+		printf("%s",brr[i]);
+		printf("\n");
+	}
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,17 @@
+﻿生成启动时间为 2023/10/18 16:53:05。
+     1>项目“D:\1编程\初学\测血压\测血压\测血压.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\测血压.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "测血压.cpp"
+         测血压.cpp
+     1>d:\1编程\初学\测血压\测血压\测血压.cpp(10): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\初学\测血压\测血压\测血压.cpp(13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>d:\1编程\初学\测血压\测血压\测血压.cpp(17): error C2064: 项不会计算为接受 2 个参数的函数
+     1>已完成生成项目“D:\1编程\初学\测血压\测血压\测血压.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.14

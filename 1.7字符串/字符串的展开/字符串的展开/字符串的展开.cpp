@@ -1,0 +1,124 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int i,n,len,p1,p2,p3,m=0,num,z,x=0;
+	char arr[200][1000]={},ch;
+	scanf("%d%d%d",&p1,&p2,&p3);
+	getchar();
+	while(scanf("%c",&ch)&&ch!='\n')
+	{
+		arr[m][0]=ch;
+		m++;
+	}
+	len=m+1;
+	for(i=0;i<len;i++)
+	{
+		if(arr[i][0]=='-')
+		{
+			if(arr[i-1][0]-arr[i+1][0]==-1)
+			{
+				for(n=i;n<len;n++)
+				{
+					arr[n][0]=arr[n+1][0];
+				}
+			}
+			else if(arr[i-1][0]>=arr[i+1][0])
+			{}
+			else if(arr[i-1][0]<='z'&&arr[i-1][0]>='a'&&arr[i+1][0]<='z'&&arr[i+1][0]>='a'&&arr[i-1][0]+1<arr[i+1][0]||arr[i-1][0]<='9'&&arr[i-1][0]>='0'&&arr[i+1][0]<='9'&&arr[i+1][0]>='0'&&arr[i-1][0]+1<arr[i+1][0])
+			{	 
+				if(p1==1)
+				{
+					if(p3==1)
+					{
+						z=arr[i-1][0]+1;
+						for(num=0;num<p2*(arr[i+1][0]-arr[i-1][0]-1);num++)
+						{
+							arr[i][num]=z;
+							x++;
+							if(x==p2)
+							{
+								z++;
+								x=0;
+							}
+						}
+					}
+					else
+					{
+						z=arr[i+1][0]-1;
+						for(num=0;num<p2*(arr[i+1][0]-arr[i-1][0]-1);num++)
+						{
+							arr[i][num]=z;
+							x++;
+							if(x==p2)
+							{
+								z--;
+								x=0;
+							}
+						}
+					}
+				}
+				else if(p1==2)
+				{
+					if(p3==1)
+					{
+						if(arr[i-1][0]<='9'&&arr[i-1][0]>='0')
+						{
+							z=arr[i-1][0]+1;
+						}
+						else
+						{
+							z=arr[i-1][0]+1-32;
+						}
+						for(num=0;num<p2*(arr[i+1][0]-arr[i-1][0]-1);num++)
+						{
+							arr[i][num]=z;
+							x++;
+							if(x==p2)
+							{
+								z++;
+								x=0;
+							}
+						}
+					}
+					else
+					{
+						if(arr[i-1][0]<='9'&&arr[i-1][0]>='0')
+						{
+							z=arr[i+1][0]-1;
+						}
+						else
+						{
+							z=arr[i+1][0]-1-32;
+						}
+						for(num=0;num<p2*(arr[i+1][0]-arr[i-1][0]-1);num++)
+						{
+							arr[i][num]=z;
+							x++;
+							if(x==p2)
+							{
+								z--;
+								x=0;
+							}
+						}
+					}
+				}
+				else
+				{
+					ch='*';
+					for(num=0;num<p2*(arr[i+1][0]-arr[i-1][0]-1);num++)
+					{
+						arr[i][num]=ch;
+					}
+				}
+			}
+		}
+	}
+	for(i=0;i<len;i++)
+	{
+		printf("%s",arr[i]);
+	}
+	system("pause");
+	return 0;
+}

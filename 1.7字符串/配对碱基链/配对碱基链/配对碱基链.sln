@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "配对碱基链", "配对碱基链.vcxproj", "{8BADFEB9-D0E0-40F4-B106-EDB7809FCB09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BADFEB9-D0E0-40F4-B106-EDB7809FCB09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BADFEB9-D0E0-40F4-B106-EDB7809FCB09}.Debug|Win32.Build.0 = Debug|Win32
+		{8BADFEB9-D0E0-40F4-B106-EDB7809FCB09}.Release|Win32.ActiveCfg = Release|Win32
+		{8BADFEB9-D0E0-40F4-B106-EDB7809FCB09}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

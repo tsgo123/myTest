@@ -1,0 +1,91 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i;
+	long n,b,a;
+	scanf("%ld",&n);
+	if(n<0&&n%10!=0)
+	{
+		printf("-");
+	for(i=1;;i++)
+	{
+		a=n;
+		b=n%10;
+		n=n/10;
+		if(a!=b)
+		{
+			printf("%ld",abs(b));
+		}
+		else
+		{
+			printf("%ld",abs(b));
+			break;
+		}
+	}
+	}
+	if(n<0&&n%10==0)
+	{
+		printf("-");
+	for(i=1;;i++)
+	{
+		a=n;
+		b=n%10;
+		n=n/10;
+		if(a!=b&&b!=0)
+		{
+			printf("%ld",abs(b));
+		}
+	    else if(a!=b&&b==0)
+		{
+
+		}
+		else
+		{
+			printf("%ld",abs(b));
+			break;
+		}
+	}
+	}
+	if(n>0&&n%10!=0)
+	{
+	for(i=1;;i++)
+	{
+		a=n;
+		b=n%10;
+		n=n/10;
+		if(a!=b)
+		{
+			printf("%ld",abs(b));
+		}
+		else
+		{
+			printf("%ld",abs(b));
+			break;
+		}
+	}
+	}
+	if(n>0&&n%10==0)
+	{
+	for(i=1;;i++)
+	{
+		a=n;
+		b=n%10;
+		n=n/10;
+		if(a!=b&&b!=0)
+		{
+			printf("%ld",abs(b));
+		}
+		else if(a!=b&&b==0)
+		{
+		}
+		else
+		{
+			printf("%ld",abs(b));
+			break;
+		}
+	}
+	}
+	system("pause");
+	return 0;
+}

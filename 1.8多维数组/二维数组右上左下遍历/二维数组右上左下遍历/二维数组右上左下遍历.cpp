@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,m,row,col,arr[110][110]={0},j,k;
+	scanf("%d%d",&row,&col);
+	getchar();
+	for(n=0;n<row;n++)
+	{
+		for(m=0;m<col;m++)
+		{
+			scanf("%d",&arr[n][m]);
+		}
+	}
+	for(n=0;n<col;n++)
+	{
+		m=0;
+		j=m;
+		k=n;
+		while(j<row&&k>=0)
+		{
+			printf("%d",arr[j][k]);
+			printf("\n");
+			j++;
+			k--;
+		}
+	}
+	for(m=1;m<row;m++)
+	{
+		n=col-1;
+		j=m;
+		k=n;
+		while(j<row&&k>=0)
+		{
+			printf("%d",arr[j][k]);
+			printf("\n");
+			j++;
+			k--;
+		}
+	}
+	system("pause");
+	return 0;
+}

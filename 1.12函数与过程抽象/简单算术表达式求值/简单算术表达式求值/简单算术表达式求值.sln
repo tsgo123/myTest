@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "简单算术表达式求值", "简单算术表达式求值.vcxproj", "{6D8A1074-B9D1-4496-B432-A7D5098DE90A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D8A1074-B9D1-4496-B432-A7D5098DE90A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6D8A1074-B9D1-4496-B432-A7D5098DE90A}.Debug|Win32.Build.0 = Debug|Win32
+		{6D8A1074-B9D1-4496-B432-A7D5098DE90A}.Release|Win32.ActiveCfg = Release|Win32
+		{6D8A1074-B9D1-4496-B432-A7D5098DE90A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

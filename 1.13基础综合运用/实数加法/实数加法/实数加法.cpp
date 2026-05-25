@@ -1,0 +1,111 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	char ch;
+	int i=0,j=0,flag=0,crr[150]={0},drr[150]={0},arr[150]={0},brr[150]={0},z,t,flag1=0,len1,len2,len3,len4,m=0;
+    while(scanf("%c",&ch)&&ch!='\n')
+	{
+		if(ch!='.'&&flag==0)
+		{
+			arr[i]=ch-'0';
+			i++;
+		}
+		else if(ch=='.')
+			flag=1;
+		else if(ch!='.'&&flag==1)
+		{
+			brr[j]=ch-'0';
+			j++;
+		}
+	}
+	len1=i,len2=j;
+	for(z=0;z<i/2;z++)
+	{
+		t=arr[z];
+		arr[z]=arr[i-1-z];
+		arr[i-1-z]=t;
+	}
+	i=0,j=0;
+    while(scanf("%c",&ch)&&ch!='\n')
+	{
+		if(ch!='.'&&flag1==0)
+		{
+			crr[i]=ch-'0';
+			i++;
+		}
+		else if(ch=='.')
+			flag1=1;
+		else if(ch!='.'&&flag1==1)
+		{
+			drr[j]=ch-'0';
+			j++;
+		}
+	}
+	len3=i,len4=j;
+	for(z=0;z<i/2;z++)
+	{
+		t=crr[z];
+		crr[z]=crr[i-1-z];
+		crr[i-1-z]=t;
+	}
+    if(len4>len2)
+	{
+		len2=len4;
+	}
+	for(z=0;z<len2;z++)
+	{
+		brr[z]+=drr[z];
+	}
+	for(z=len2-1;z>=1;z--)
+	{
+		brr[z-1]+=brr[z]/10;
+		brr[z]%=10;
+		if(brr[z]==0&&m==0)
+		{
+			len2--;
+		}
+		else
+			m=1;
+	}
+	if(len2==1&&brr[0]==0)
+	{
+		flag=0;
+		flag1=0;
+		len2=0;
+	}
+	t=brr[0]/10;
+	brr[0]%=10;
+	arr[0]+=t;
+    if(len3>len1)
+	{
+		len1=len3;
+	}
+	for(z=0;z<len1;z++)
+	{
+		arr[z]+=crr[z];
+	}
+	for(z=0;z<len1;z++)
+	{
+		arr[z+1]+=arr[z]/10;
+		arr[z]%=10;
+	}	
+	while(arr[z]>0)
+	{
+		arr[z+1]+=arr[z]/10;
+		arr[z]%=10;
+		z++;
+		len1++;
+	}
+	for(z=len1-1;z>=0;z--)
+		printf("%d",arr[z]);
+	if(flag==1||flag1==1)
+		printf(".");
+	for(z=0;z<len2;z++)
+	{
+		printf("%d",brr[z]);
+	}
+	system("pause");
+	return 0;
+}

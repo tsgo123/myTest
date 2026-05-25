@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	scanf("%d %d %c",&a,&b,&c);
+	if(c=='+')
+	{
+		printf("%d",a+b);
+	}
+	if(c=='-')
+	{
+		printf("%d",a-b);
+	}
+	if(c=='*')
+	{
+		printf("%d",a*b);
+	}
+	if(c=='/'&&b!=0)
+	{
+		printf("%d",a/b);
+	}
+	if(c=='/'&&b==0)
+	{
+		printf("Divided by zero!");
+	}
+	if(c!='+'&&c!='-'&&c!='*'&&c!='/')
+	{
+		printf("Invalid operator!");
+	}
+	return 0;
+}

@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int n,i,j,len,x,y,num=0,max=0,z=0,h=0;
+	int brr[500][2]={0};
+	char arr[600]={0};
+	scanf("%d",&n);
+	getchar();
+	gets(arr);
+	len=strlen(arr);
+	for(i=0;i<len-n+1;i++)
+	{
+		for(j=i+1;j<len-n+1;j++)
+		{
+			x=i;
+			y=j;
+			while(arr[x]==arr[y]&&x<i+n&&y<j+n)
+			{
+				x++;
+				y++;
+				num++;
+			}
+			if(num==n)
+			{
+				brr[z][0]=i;
+				h++;
+			}
+			num=0;
+		}
+		if(h>0)
+		{
+		  brr[z][1]=h;
+		  z++;
+		}
+		h=0;
+	}
+	for(i=0;i<z;i++)
+	{
+		if(brr[i][1]>max)
+		{
+			max=brr[i][1];
+		}
+	}
+	if(max!=0)
+	{
+		printf("%d",max+1);
+		for(i=0;i<z;i++)
+		{
+			if(brr[i][1]==max)
+			{
+				printf("\n");
+				for(j=brr[i][0];j<brr[i][0]+n;j++)
+				{
+					printf("%c",arr[j]);
+				}
+			}
+		}
+	}
+	if(z==0)
+	{
+		printf("NO");
+	}
+	system("pause");
+	return 0;
+}
